@@ -98,7 +98,7 @@ def conv2d_block(
         DO = Dropout
     else:
         raise ValueError(
-            f"dropout_type must be one of ['spatial', 'standard'], got {dropout_type}"
+            "dropout_type must be one of ['spatial', 'standard'], got {dropout_type}"
         )
 
     c = Conv2D(
